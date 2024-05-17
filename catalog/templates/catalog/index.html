@@ -1,0 +1,14 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+    <h1>Property Database Homepage</h1>
+    <p>The following database will have properties for rent and sale:</p>
+    <ul>
+        <li><strong>Homes:</strong> {{ num_books }}</li>
+        <li><strong>Apartments:</strong> {{ num_instances }}</li>
+        <li><strong>Condos:</strong> {{ num_instances_available}}</li>
+        <li><strong>Available Properties:</strong> {{ num_authors }}</li>
+    </ul>
+
+    <p>You have visited this page {{ num_visits }} time{{num_visits|pluralize }}.</p>
+{% endblock %}
